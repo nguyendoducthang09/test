@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+</body>
+</html>
+
+<br>
+<br>
+    <div class="cont">
+        <form id="login-form" action="">
+            <h2>Đăng nhập</h2>
+            <label>
+                <span>Username</span>
+                <input id="username" placeholder="username" type="text" />
+            </label>
+            <label>
+                <span>mật khẩu</span>
+                <input id="password" placeholder="password" type="text" />
+            </label>
+            <p class="forgot-pass">Quên mk thì tạo acc mới nhé =))</p>
+            <button type="button" class="submit">Đăng nhập</button>
+         
+        </form>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Bạn không có tài khoản? Hãy đăng ký ngay!<h3>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>Bạn đã có tài khoản? Hãy đăng nhập!<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Đăng ký</span>
+                    <span class="m--in">Đăng nhập</span>
+                </div>
+            </div>
+            <div id="register-form" action="">
+                <h2>Đăng ký</h2>
+               
+                <label>
+                    <span>Username</span>
+                    <input id="username1" placeholder="username" type="text" />
+                </label>
+                <label>
+                    <span>Mật khẩu</span>
+                    <input id="password1" placeholder="password" type="text" />
+                </label>
+                <button type="submit" class="submit">Đăng ký</button>
+                
+            </div>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
